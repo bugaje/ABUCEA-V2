@@ -1,4 +1,4 @@
-import picamera
+import picamera  
 from gtts import gTTS
 import os
 
@@ -69,19 +69,8 @@ for p in k:
     
 
 
+options = {"your google credential keys goes here pub/sub generated google cloud platform"} //API KEY GENERATED FROM GOOGLE CLOUD PLATFORM
 
-options = {
-  "type": "service_account",
-  "project_id": "cloud-robot-255017",
-  "private_key_id": "e09f16f46fd652d0f112ececd6ae7b837a00ae5c",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYLxPRfvq9gdMv\nPXXJ6JuBmZpwjQdJ73t69R5N5urPEOMZByOgKZITrBoyH2n3cuGWJn5fbe5y9nDa\nyCXydHFBFiB9hnDV3L9rB/l5OCYPpViUGIDDRNuPVqPk0WhG4Q4n+mYVwwHQ8gCj\nIUZ+kBdW1mSkufCVqpOw0ykrzERf9GgIllIJoOqkNYLVO7T799mE+lzSuURkCz8B\nQ/078KTffzzvyspx/q373HoI9d1e1wFHC0ihyN/+RU92qNwXpidLbeDmFPrKIRWj\n+89LTk/7RJVlp3zLs3A1Csc+mD0GDCcA+eg+CBZw4nVwvLmouCQsTxlCaM/O0nS+\n6Bq7Ew7jAgMBAAECggEAH6t54vFlXdjEgtb6nVBzDjUzP59xZ2lAH38EPakBUhdT\nuullqdjH2mjr0ixG86YD7+FbbF3S66A4X9yoA9D/fGeiQoas8K+XkorxsZ/s9314\nsK1hmPmf6UDp3qNiJta2d7CCPwLj47kS0yhp8YWTXbh9DaK4YNHt3p7N7ml3b3o9\n5db5/H0k93gk8ijRkSIPuC3oVdYaFf4AhW/e9VXEseh73/5ZlQy8nqQxsw8pdBml\n1gtT9Uu4f2l9usAjMqtnEU+fF5OCZkOrP01pSUY66EAC/5qVnsSavgnK+sztoLiW\n2oc1H23XsdOR3QU1WBlBLo9R4ERK0EO7LgUmZM+WhQKBgQD/YI4oa9n2vRfv9AUB\nMmBxjUFB+HYWpO5iDiGm6NGgJZLQmlZRb1pniUdDD0x9kCjcfzxQT/FxiDPEk6Ja\ntsCF1pHYaiuX+JFrrnqY/M/ACcm4fc0GBuR+minsXEkri9i17zSVR6Wjshbp7AAo\naGlUC3Pc7cIEeETCRFtLpHPbVwKBgQDYtg1ClX6QjYZYPb2mJBvqAx5idShFoX7F\nEIaLbPrDVgwkSrHBFjRvmS86VAR5AKs0EmOEXK0CcwLlRKEeuJotdfqTRo24FFcZ\ngE5letPvyxOYGYSZR+SqgnPuP60yAiFJJA+X9jHDw84uARRWMwI0CkjzybnMpKSw\nEnzxBjS9VQKBgQCu/w5LGqTQ1IELt+6aBFhcV4xpVYYuPDTyUnay9oV3NWgmtCwE\nP8b2ffasOFaVEG0/s5yz+CQeRVQcF4LAoMzKqd9lKlPXHskfvf9ayJrgIJTvbJ1K\nzPxU2PVzd0XYpksJWPJyfRc/VjEneMYe6nWK1xI9SVuTTorniIn7CqUtnwKBgEr9\nRD1kKbWvo2tpgfS5zgb+KUd8rwDZT1q1yzj37xYk8nKkfjoIiwCLC3KtnBabCqMs\nMc+dmiicz8WyJ+bPjlpo1tqbsXKfZzxlz7sB89CofxFE00OPQytVlPQ+iJojbo02\ns0asZLAPU4tLyFPDtuF3JaNmjKqp1msvGpj0ws85AoGAHnDrRFsiqWiMwnTSqqpc\n9N9u/EV3gOq6b5TWNrSj41mNSx5tP9UxC64P2UZHlhHD4vMdoP6ELSJwPtVH5OzE\nyY5+b3hiHZoCiNr4/Wo+u3/u61AG94A78qsO8KacPqZTKv2oIHP717rtOZ/q5hUc\nOr2VqccRKeTyBKDR17AGt1c=\n-----END PRIVATE KEY-----\n",
-  "client_email": "robot-vision@cloud-robot-255017.iam.gserviceaccount.com",
-  "client_id": "102597451327736798840",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/robot-vision%40cloud-robot-255017.iam.gserviceaccount.com"
-}
 
 from google.cloud import vision
 client = vision.ImageAnnotatorClient(options)
@@ -378,11 +367,6 @@ def assistant(command):
               and M.Sc and Ph.D in Control Engineering and the proposed Masters in IT and Systems (MITS). It is worth noting that the Department has the following broad research areas
               1. AI, Robotics and Control Systems Group. 2. Embedded Systems and Applications Development Group. 3. Networks and Security Group 4. Image Processing and Computer Vision Group
               Our long-term vision is that of becoming a regional center of excellence for imparting high level ICT and Control Engineering knowledge in order to develop skilled and globally competitive professionals to serve the needs of our nation and humanity in general''')
-        
-    
-    
-    
-    
     
     
     elif 'who is the dean faculty of engineering' in command or 'who is din faculty of engineering' in command or 'present dean faculty of engineering' in command:
@@ -545,8 +529,6 @@ def assistant(command):
               he was the Secretary General of the Nigeria's ruling party the All Progressives Congress.''')
     elif 'who is the governor of zamfara state' in command or 'governor of zamfara' in command or 'present governor of zamfara state' in command:
         sound("Bello Muhammad Matawalle (born in 1969) is the current Governor of Zamfara State, Nigeria. He contested under the platform of the Peoples Democratic Party (PDP).")
-
-
             
     elif 'who created you' in command or 'who create you' in command or 'who made you' in command or 'who is your maker' in command or 'who build you' in command:
         sound('I was created by ALIYU ISAH and BLESSED GUDA, the guys whom i never got to know them')
